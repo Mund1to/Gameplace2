@@ -88,7 +88,7 @@ if (btnHero) {
 document.querySelectorAll('.producto').forEach(producto => {
     producto.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-5px)';
-        this.style.boxShadow = '0 8px 25px rgba(0, 240, 255, 0.4)';
+        this.style.boxShadow = '0 8px 25px rgba(0, 153, 164, 0.4)';
     });
 
     producto.addEventListener('mouseleave', function () {
