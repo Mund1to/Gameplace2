@@ -49,7 +49,7 @@ if (formulario) {
         formulario.reset();
 
         // Log en consola
-        console.log('Formulario enviado:', { nombre, email, mensaje });
+        console.log('Formulario enviado correctamente:', { nombre, email, mensaje });
     });
 }
 
