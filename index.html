@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Tu Universo Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">🎮 GameZone</h1>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#talleres">Talleres</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenido a GameZone</h2>
+            <p>Los mejores juegos, los torneos más épicos y la comunidad gamer que estabas buscando</p>
+            <button class="btn btn-primary">Explorar Juegos</button>
+        </div>
+    </section>
+
+    <!-- Sección de Juegos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Catálogo de Juegos</h2>
+            <div class="grid-productos">
+                <div class="producto">
+                    <div class="producto-imagen">🚀</div>
+                    <h3>Aventura Espacial</h3>
+                    <p>Explora galaxias infinitas en esta épica saga de ciencia ficción</p>
+                </div>
+                <div class="producto">
+                    <div class="producto-imagen">⚔️</div>
+                    <h3>Reino de Sombras</h3>
+                    <p>Un RPG de fantasía oscura con combates estratégicos por turnos</p>
+                </div>
+                <div class="producto">
+                    <div class="producto-imagen">🏎️</div>
+                    <h3>Velocidad Extrema</h3>
+                    <p>Carreras adrenalínicas con los autos más rápidos del mundo</p>
+                </div>
+                <div class="producto">
+                    <div class="producto-imagen">🧟</div>
+                    <h3>Zona Infectada</h3>
+                    <p>Sobrevive al apocalipsis zombie en modo cooperativo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Torneos -->
+    <section id="talleres" class="talleres">
+        <div class="container">
+            <h2>Torneos y Membresías</h2>
+            <div class="talleres-grid">
+                <div class="taller-card">
+                    <h3>Membresía Jugador</h3>
+                    <p class="precio">$50</p>
+                    <ul>
+                        <li>Acceso a torneos casuales</li>
+                        <li>2 partidas semanales incluidas</li>
+                        <li>Chat de la comunidad</li>
+                    </ul>
+                    <button class="btn btn-secondary">Unirme</button>
+                </div>
+                <div class="taller-card">
+                    <h3>Membresía Pro Gamer</h3>
+                    <p class="precio">$80</p>
+                    <ul>
+                        <li>Torneos competitivos con premios</li>
+                        <li>4 horas de práctica con coach</li>
+                        <li>Equipo gamer incluido</li>
+                    </ul>
+                    <button class="btn btn-secondary">Unirme</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Únete a la Party</h2>
+            <form class="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GameZone. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
