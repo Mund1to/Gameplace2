@@ -85,7 +85,7 @@ header {
 
 .nav-links a:hover {
     color: var(--color-primary);
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+    text-shadow: 0 0 8px rgba(20, 211, 224, 0.7);
 }
 
 /* ========================================
