@@ -141,6 +141,6 @@ actualizarContador();
 // MENSAJES EN CONSOLA
 // ========================================
 
-console.log('%c🎮 Bienvenido a GameZone', 'color: #00F0FF; font-size: 16px; font-weight: bold;');
+console.log('%c🎮 Bienvenido a GameZone', 'color: #0dcbd9; font-size: 16px; font-weight: bold;');
 console.log('%cPágina cargada correctamente', 'color: #FF2EFF; font-size: 14px;');
 console.log('%cDesarrollado con 🕹️', 'color: #00F0FF; font-size: 12px;');
