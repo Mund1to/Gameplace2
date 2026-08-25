@@ -10,7 +10,7 @@
 
 :root {
     --color-primary: #00F0FF;
-    --color-secondary: #FF2EFF;
+    --color-secondary: #650065;
     --color-text: #E8E8FF;
     --color-light: #12121f;
     --color-border: #2c2c46;
@@ -45,8 +45,8 @@ body {
    ======================================== */
 
 header {
-    background: #0d0d18;
-    color: white;
+    background: #0b0b1e;
+    color: rgb(255, 249, 249);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -85,7 +85,7 @@ header {
 
 .nav-links a:hover {
     color: var(--color-primary);
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+    text-shadow: 0 0 8px rgba(20, 211, 224, 0.7);
 }
 
 /* ========================================
@@ -337,7 +337,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         gap: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.99rem;
     }
 
     .logo {
@@ -345,7 +345,7 @@ footer {
     }
 
     .hero h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hero p {
