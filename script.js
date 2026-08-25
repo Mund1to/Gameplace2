@@ -60,19 +60,33 @@ if (formulario) {
 }
 
 // ========================================
-// REGISTRO EN TORNEOS / MEMBRESÍAS
+// REGISTRO EN TORNEOS / MEMBRESÍAS (optimizado con delegación)
 // ========================================
 
-document.querySelectorAll('.taller-card .btn-secondary').forEach(btn => {
-    btn.addEventListener('click', function () {
-        const nombreMembresia = this.closest('.taller-card').querySelector('h3').textContent;
-        const precioMembresia = this.closest('.taller-card').querySelector('.precio').textContent;
+// Selecciona el contenedor que agrupa las tarjetas de talleres/torneos.
+// Ajusta el selector si tu HTML usa otro contenedor (por ejemplo '.talleres' o '#talleres').
+const contenedorTalleres = document.querySelector('.talleres') || document.querySelector('.cards-container');
 
-        alert(`🏆 ¡Registro Exitoso!\n\n${nombreMembresia}\nPrecio: ${precioMembresia}\n\nProximamente te enviaremos los detalles para unirte a la party.`);
+if (contenedorTalleres) {
+  contenedorTalleres.addEventListener('click', function (e) {
+    const btn = e.target.closest('.taller-card .btn-secondary');
+    if (!btn) return;
 
-        console.log(`Usuario se registró a: ${nombreMembresia}`);
-    });
-});
+    const tarjeta = btn.closest('.taller-card');
+    if (!tarjeta) return;
+
+    const nombreMembresiaEl = tarjeta.querySelector('h3');
+    const precioMembresiaEl = tarjeta.querySelector('.precio');
+
+    const nombreMembresia = nombreMembresiaEl ? nombreMembresiaEl.textContent.trim() : 'Membresía';
+    const precioMembresia = precioMembresiaEl ? precioMembresiaEl.textContent.trim() : 'Precio no disponible';
+
+    alert(`🏆 ¡Registro Exitoso!\n\n${nombreMembresia}\nPrecio: ${precioMembresia}\n\nPróximamente te enviaremos los detalles para unirte a la party.`);
+
+    console.log(`Usuario se registró a: ${nombreMembresia}`);
+  });
+}
+
 
 // ========================================
 // BOTÓN PRINCIPAL HERO
