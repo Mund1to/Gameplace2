@@ -45,7 +45,7 @@ body {
    ======================================== */
 
 header {
-    background: #0d0d18;
+    background: #0b0b1e;
     color: rgb(255, 249, 249);
     padding: 1rem 0;
     position: sticky;
@@ -337,7 +337,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         gap: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.99rem;
     }
 
     .logo {
