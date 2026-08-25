@@ -43,7 +43,7 @@ if (formulario) {
         }
 
         // Mensaje de éxito
-        alert(`🎮 ¡Gracias ${nombre}!\n\nHemos recibido tu mensaje.\nTe contactaremos pronto en: ${email}`);
+        alert(`🎮 ¡Gracias ${nombre}!\n\nHemos recibido tu mensaje.\nTe contactaremos pronto en tu correo : ${email}`);
 
         // Limpiar formulario
         formulario.reset();
