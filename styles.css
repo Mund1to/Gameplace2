@@ -46,7 +46,7 @@ body {
 
 header {
     background: #0d0d18;
-    color: white;
+    color: rgb(255, 249, 249);
     padding: 1rem 0;
     position: sticky;
     top: 0;
