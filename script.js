@@ -31,7 +31,7 @@ if (formulario) {
 
         // Validación
         if (nombre === '' || email === '' || mensaje === '') {
-            alert('❌ Por favor, completa todos los campos');
+            alert('❌ Por favor, completa todos los campos, es necesario');
             return;
         }
 
